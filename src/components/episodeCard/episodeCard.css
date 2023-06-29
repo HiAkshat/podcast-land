@@ -1,0 +1,24 @@
+.ep-card{
+  background-size: cover;
+}
+
+.ep-title{
+  color: #FFF;
+  font-size: 20px;
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 800;
+  line-height: 30px;
+  letter-spacing: -0.25px;
+}
+
+.ep-details{
+  margin-top: 4px;
+  margin-bottom: 11px;
+  color: #FFF;
+  font-size: 14px;
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}

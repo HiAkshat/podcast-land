@@ -1,0 +1,12 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Play - CTA">
+<circle id="Oval" cx="25.3065" cy="25.1216" r="24" transform="rotate(-1 25.3065 25.1216)" fill="url(#paint0_linear_0_169)"/>
+<path id="Path" d="M22.9866 19.249C22.8318 19.1466 22.6331 19.1384 22.4704 19.2277C22.3076 19.317 22.2078 19.489 22.2109 19.6746L22.4029 30.6729C22.4065 30.8585 22.5126 31.0269 22.6786 31.1101C22.7506 31.1471 22.8306 31.1656 22.9116 31.1641C23.0126 31.1623 23.1107 31.1299 23.193 31.0712L31.0958 25.4324C31.2298 25.3367 31.3081 25.1813 31.3053 25.0167C31.3024 24.852 31.2187 24.6994 31.0814 24.6085L22.9866 19.249Z" fill="#8B5CF6"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_169" x1="30.0794" y1="-7.09664" x2="-6.17846" y2="19.7125" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.64"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+</defs>
+</svg>
