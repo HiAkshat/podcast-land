@@ -12,12 +12,10 @@ function App() {
       <Navbar />
       <Featured />
       <EpInfo />
-      <div className='px-[85px]'>
-        <Episodes />
-        <Ad />
-      </div>
+      <Episodes />
+      <Ad />
+      <Bottombar />
       <div className='px-[170px] my-[64px]'>
-        <Bottombar />
       </div>
     </>
   )

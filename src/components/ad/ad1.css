@@ -2,6 +2,7 @@
   background: url("./assets/ad1/5.png"), url("./assets/ad1/3.png"), url("./assets/ad1/2.png"), url("./assets/ad1/1.png");
   background-size: cover;
   background-position: right;
+  padding: 80px;
 }
 
 .ad-heading{
@@ -27,4 +28,57 @@
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.25px;
+}
+
+.ad-box{
+  margin: 0 85px;
+}
+
+.ad-text-box{
+  width: 54%;
+}
+
+@media only screen and (max-width: 1024px){
+  .ad-box{
+    padding: 50px;
+  }
+
+  .ad-heading{
+    font-size: 36px;
+    line-height: 38px;
+  }
+
+  .ad-terms{
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .ad-box{
+    padding: 30px;
+    flex-direction: column;
+  }
+  
+  .ad-text-box{
+    width: 90%;
+  }
+
+  .ad-heading{
+    font-size: 24px;
+  }
+
+  .ad-sub-button{
+    margin-top: 30px;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .ad-box{
+    margin: 0 30px;
+  }
+  .ad-sub-button{
+    width: 70%;
+  }
 }

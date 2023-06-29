@@ -61,7 +61,6 @@
   }
 
   .featured-heading{
-    /* font-size: 36px; */
     line-height: 40px;
   }
 }
@@ -105,6 +104,12 @@
   .featured-box{
     padding: 50px;
   }
+
+  .featured-heading{
+    font-size:28px;
+    line-height: 36px;
+  }
+
   .progress-bar{
     margin: 10px 0;
   }

@@ -1,3 +1,8 @@
+.bottom-bar{
+  margin: 64px auto;
+  padding: 0 170px;
+}
+
 .copyright-text{
   color: #64748B;
   font-size: 14px;
@@ -5,4 +10,21 @@
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
+}
+
+@media only screen and (max-width: 900px){
+  .bottom-bar{
+    padding: 0 100px;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .bottom-bar{
+    flex-direction: column;
+    padding: 0 60px;
+  }
+
+  .social-icons{
+    margin-top: 20px;
+  }
 }
