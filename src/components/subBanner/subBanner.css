@@ -1,11 +1,11 @@
-.ad-box{
-  background: url("ad_assets/5.png"), url("ad_assets/3.png"), url("ad_assets/2.png"), url("ad_assets/1.png");
+.sub-box{
+  background: url("subBanner_assets/5.png"), url("subBanner_assets/3.png"), url("subBanner_assets/2.png"), url("subBanner_assets/1.png");
   background-size: cover;
   background-position: right;
   padding: 80px;
 }
 
-.ad-heading{
+.sub-heading{
   color: #F1F5F9;
   font-size: 48px;
   font-family: "Hanken Grotesk";
@@ -20,7 +20,7 @@
   color: #3b82f6;
 }
 
-.ad-terms{
+.sub-terms{
   color: #94A3B8;
   font-size: 16px;
   font-family: Inter;
@@ -30,55 +30,55 @@
   letter-spacing: -0.25px;
 }
 
-.ad-box{
+.sub-box{
   margin: 0 85px;
 }
 
-.ad-text-box{
+.sub-text-box{
   width: 54%;
 }
 
 @media only screen and (max-width: 1024px){
-  .ad-box{
+  .sub-box{
     padding: 50px;
   }
 
-  .ad-heading{
+  .sub-heading{
     font-size: 36px;
     line-height: 38px;
   }
 
-  .ad-terms{
+  .sub-terms{
     font-size: 12px;
     line-height: 16px;
   }
 }
 
 @media only screen and (max-width: 700px){
-  .ad-box{
+  .sub-box{
     padding: 30px;
     flex-direction: column;
   }
   
-  .ad-text-box{
+  .sub-text-box{
     width: 90%;
   }
 
-  .ad-heading{
+  .sub-heading{
     font-size: 24px;
   }
 
-  .ad-sub-button{
+  .banner-sub-button{
     margin-top: 30px;
     width: 50%;
   }
 }
 
 @media only screen and (max-width: 600px){
-  .ad-box{
+  .sub-box{
     margin: 0 30px;
   }
-  .ad-sub-button{
+  .banner-sub-button{
     width: 70%;
   }
 }

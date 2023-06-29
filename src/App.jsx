@@ -2,7 +2,7 @@ import Navbar from './components/navbar/navbar'
 import Featured from './components/featured/featured'
 import EpInfo from './components/epInfo/epInfo'
 import Episodes from './components/episodes/episodes'
-import Ad from './components/ad/ad'
+import SubBanner from './components/subBanner/subBanner'
 import Bottombar from './components/bottombar/bottombar'
 import './App.css'
 
@@ -13,7 +13,7 @@ function App() {
       <Featured />
       <EpInfo />
       <Episodes />
-      <Ad />
+      <SubBanner />
       <Bottombar />
     </>
   )
