@@ -35,21 +35,21 @@ const episodes = [
     title: "Super Pumped (aka The Saturday Edition)",
     info: "Indie Stories · Jan 24 · Episode 234",
     button: "./assets/play3.svg",
-    thumbnail: "./assets/ep3.png",
+    thumbnail: "./assets/ep4.png",
   },  
   {
     id: 5,
     title: "Super Pumped (aka The Saturday Edition)",
     info: "Indie Stories · Jan 24 · Episode 234",
     button: "./assets/play3.svg",
-    thumbnail: "./assets/ep3.png",
+    thumbnail: "./assets/ep5.png",
   },  
   {
     id: 6,
     title: "Super Pumped (aka The Saturday Edition)",
     info: "Indie Stories · Jan 24 · Episode 234",
     button: "./assets/play3.svg",
-    thumbnail: "./assets/ep3.png",
+    thumbnail: "./assets/ep6.png",
   },  
 ]
 
