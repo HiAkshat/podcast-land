@@ -1,5 +1,5 @@
 .ad-box{
-  background: url("./assets/ad1/5.png"), url("./assets/ad1/3.png"), url("./assets/ad1/2.png"), url("./assets/ad1/1.png");
+  background: url("ad_assets/5.png"), url("ad_assets/3.png"), url("ad_assets/2.png"), url("ad_assets/1.png");
   background-size: cover;
   background-position: right;
   padding: 80px;
