@@ -6,6 +6,7 @@
   padding-top: 20px;
   padding-left: 23px;
   background-size: cover;
+  background-position: right;
 }
 
 .ep-title{
@@ -36,7 +37,15 @@
 }
 
 @media only screen and (max-width: 600px){
+  .ep-title{
+    font-size: 16px;
+  }
+
+  .ep-details{
+    font-size: 12px;
+  }
+
   .ep-card{
-    width: 320px;
+    width: 250px;
   }
 }

@@ -1,11 +1,10 @@
 import "./episodes.css"
 import EpisodeCard from "../episodeCard/episodeCard"
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
@@ -38,41 +37,57 @@ const episodes = [
     button: "./assets/play3.svg",
     thumbnail: "./assets/ep3.png",
   },  
+  {
+    id: 5,
+    title: "Super Pumped (aka The Saturday Edition)",
+    info: "Indie Stories · Jan 24 · Episode 234",
+    button: "./assets/play3.svg",
+    thumbnail: "./assets/ep3.png",
+  },  
+  {
+    id: 6,
+    title: "Super Pumped (aka The Saturday Edition)",
+    info: "Indie Stories · Jan 24 · Episode 234",
+    button: "./assets/play3.svg",
+    thumbnail: "./assets/ep3.png",
+  },  
 ]
 
+
+
 export default function Episodes() {
-  // const settings = {
-  //   arrows: true,
-  //   dots: false,
-  //   infinite: false,
-  //   speed: 400,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1,
-  //   autoplay: false,
-  //   autoplaySpeed: 3000
-  // };
-
-  // const slider = useRef();
-
+  const slider = useRef(null)
+  
+  const goForward = () => {
+    slider.current.scrollTo({
+      left: slider.current.scrollLeft + 500,
+      behavior: 'smooth',
+    });
+  }
+  
+  const goBackward = () => {
+    slider.current.scrollTo({
+      left: slider.current.scrollLeft - 500,
+      behavior: 'smooth',
+    });
+  }
 
   return (
-    <div className="eps-list relative flex flex-col bg-[#F1F5F9] rounded-[24px]">
+    <div className="eps-section relative flex flex-col bg-[#F1F5F9] rounded-[24px]">
       <img className="absolute left-[64px] top-[-34px] w-[66px]" src="./assets/Shapes.svg" alt="" />
 
-      {/* <Slider ref={slider} {...settings} className="helllo"> */}
-      <div className="flex overflow-hidden">
+      <div ref={slider} className="eps-list flex overflow-scroll no-scrollbar py-2">
         {episodes.map((episode) => (
-          <div className="even:rotate-1 odd:rotate-[-1deg] mr-[28px]">
+          <div key={episode.id} className="even:rotate-1 odd:rotate-[-1deg] mr-[28px]">
             <EpisodeCard key={episode.id} ep={episode}/>
           </div>
         ))}
       </div>
-      {/* </Slider> */}
 
-      <div className="slider-button flex justify-end mt-[65px]">
-        {/* <button className="slider-button mr-4 flex items-center justify-center w-[40px] h-[40px] rounded-full bg-white text-[#3b82f6]" onClick={() => slider?.current?.slickPrev()}><ArrowBackIcon fontSize="small"/></button> */}
-        {/* <button className="slider-button flex items-center justify-center w-[40px] h-[40px] rounded-full bg-white text-[#3b82f6]" onClick={() => slider?.current?.slickNext()}><ArrowForwardIcon fontSize="small"/></button> */}
-        <img className="w-[100px]" src="./assets/Arrows.svg" alt="" />
+      <div className="slider-buttons flex justify-end">
+        <button className="slider-button mr-4 flex items-center justify-center w-[40px] h-[40px] rounded-full bg-white text-[#3b82f6]" onClick={goBackward}><ArrowBackIcon fontSize="small"/></button>
+        <button className="slider-button flex items-center justify-center w-[40px] h-[40px] rounded-full bg-white text-[#3b82f6]" onClick={goForward}><ArrowForwardIcon fontSize="small"/></button>
+        {/* <img className="w-[100px]" src="./assets/Arrows.svg" alt="" /> */}
       </div>
 
     </div>
