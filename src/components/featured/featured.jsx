@@ -10,7 +10,7 @@ export default function Featured() {
 
 
         <div className="play-controls flex items-center justify-around">
-          <div className="play-controls-icons flex w-[20%] justify-around items-center">
+          <div className="play-controls-icons flex justify-around items-center">
             <img src="./assets/player-controls/Play.svg" alt="" />
             <img src="./assets/player-controls/1.svg" alt="" />
             <img src="./assets/player-controls/2.svg" alt="" />
