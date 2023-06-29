@@ -25,6 +25,10 @@
   margin-top: 65px;
 }
 
+button:disabled{
+  opacity: 0.4;
+}
+
 @media only screen and (max-width: 600px){
   .eps-section{
     margin-left: 20px;

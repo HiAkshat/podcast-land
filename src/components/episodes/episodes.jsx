@@ -1,6 +1,6 @@
 import "./episodes.css"
 import EpisodeCard from "../episodeCard/episodeCard"
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
@@ -72,6 +72,30 @@ export default function Episodes() {
     });
   }
 
+  const [isRightScrollable, setIsRightScrollable] = useState(false);
+  const [isLeftScrollable, setIsLeftScrollable] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const divElement = slider.current;
+      const isDivRightScrollable = (divElement.scrollLeft !== 0);
+      const isDivLeftScrollable = (divElement.scrollLeft +1 < divElement.scrollWidth - divElement.clientWidth);
+
+      // console.log(divElement.scrollLeft)
+      // console.log(divElement.scrollWidth - divElement.clientWidth)
+
+      setIsRightScrollable(isDivRightScrollable);
+      setIsLeftScrollable(isDivLeftScrollable);
+      
+    };
+
+    slider.current.addEventListener('scroll', handleScroll);
+    return () => {
+      slider.current.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
   return (
     <div className="eps-section relative flex flex-col bg-[#F1F5F9] rounded-[24px]">
       <img className="absolute left-[64px] top-[-34px] w-[66px]" src="./assets/Shapes.svg" alt="" />
@@ -85,8 +109,8 @@ export default function Episodes() {
       </div>
 
       <div className="slider-buttons flex justify-end">
-        <button className="slider-button mr-4 flex items-center justify-center w-[40px] h-[40px] rounded-full bg-white text-[#3b82f6]" onClick={goBackward}><ArrowBackIcon fontSize="small"/></button>
-        <button className="slider-button flex items-center justify-center w-[40px] h-[40px] rounded-full bg-white text-[#3b82f6]" onClick={goForward}><ArrowForwardIcon fontSize="small"/></button>
+        <button disabled={!isRightScrollable} className="slider-button mr-4 flex items-center justify-center w-[40px] h-[40px] rounded-full bg-white text-[#3b82f6]" onClick={goBackward}><ArrowBackIcon fontSize="small"/></button>
+        <button disabled={!isLeftScrollable} className="slider-button flex items-center justify-center w-[40px] h-[40px] rounded-full bg-white text-[#3b82f6]" onClick={goForward}><ArrowForwardIcon fontSize="small"/></button>
         {/* <img className="w-[100px]" src="./assets/Arrows.svg" alt="" /> */}
       </div>
 
