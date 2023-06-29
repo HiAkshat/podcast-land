@@ -25,8 +25,8 @@ export default function EpInfo() {
   ]
 
   return (
-    <div className="flex  py-[80px] px-[168px] justify-between">
-      <div className="flex flex-col w-[768px]">
+    <div className="info-section flex justify-between">
+      <div className="info-text-only flex flex-col">
         <div className="flex flex-col mb-[32px]">
           <span className="notes-heading pb-[16px]">Notes</span>
           <span className="detail-text">In this episode,  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the with the release of letraset sheets containing passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
@@ -63,7 +63,7 @@ export default function EpInfo() {
         </div>
       </div>
 
-      <div className="relative flex flex-col ml-[56px] bg-slate-50 w-[280px] h-full pl-[24px] py-[24px] rounded-[24px]">
+      <div className="hosts-and-guests relative flex flex-col bg-slate-50 w-[280px] h-full pl-[24px] py-[24px] rounded-[24px]">
         <img className="absolute right-[58px] top-[-12px] w-[21px]" src="./assets/star1.svg" alt="" />
         <img className="absolute right-[108px] top-[-33px] w-[21px]" src="./assets/star2.svg" alt="" />
         <span className="hosts-heading">Hosts & Guests</span>

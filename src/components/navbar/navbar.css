@@ -1,3 +1,9 @@
+.navbar{
+  padding-top: 24px;
+  padding-left: 168px;
+  padding-right: 168px;
+}
+
 .sub-button{
   box-shadow: 0px 1px 2px 0px rgba(17, 24, 39, 0.12);
 }
@@ -8,4 +14,16 @@
   font-family: Inter;
   font-weight: 500;
   line-height: 22px;
+}
+
+@media only screen and (max-width: 1000px){
+  .navbar{
+    padding: 30px 130px 0;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .navbar{
+    padding: 30px 50px 0;
+  }
 }

@@ -10,9 +10,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className='mt-[106px]'>
-        <Featured />
-      </div>
+      <Featured />
       <EpInfo />
       <div className='px-[85px]'>
         <Episodes />
