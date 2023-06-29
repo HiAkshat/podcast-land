@@ -26,9 +26,10 @@
   .bottom-bar{
     flex-direction: column;
     padding: 0 60px;
+    margin-bottom: 32px;
   }
 
-  .social-icons{
+  .social-icons{  
     margin-top: 20px;
   }
 }
