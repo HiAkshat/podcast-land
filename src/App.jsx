@@ -15,8 +15,6 @@ function App() {
       <Episodes />
       <Ad />
       <Bottombar />
-      <div className='px-[170px] my-[64px]'>
-      </div>
     </>
   )
 }
