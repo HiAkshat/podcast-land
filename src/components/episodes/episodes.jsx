@@ -1,5 +1,13 @@
 import "./episodes.css"
 import EpisodeCard from "../episodeCard/episodeCard"
+import { useRef, useEffect } from "react";
+
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 const episodes = [
   {
@@ -33,9 +41,25 @@ const episodes = [
 ]
 
 export default function Episodes() {
+  // const settings = {
+  //   arrows: true,
+  //   dots: false,
+  //   infinite: false,
+  //   speed: 400,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   autoplay: false,
+  //   autoplaySpeed: 3000
+  // };
+
+  // const slider = useRef();
+
+
   return (
     <div className="relative flex flex-col bg-[#F1F5F9] rounded-[24px] py-[80px] pl-[80px] mb-[80px]">
       <img className="absolute left-[64px] top-[-34px] w-[66px]" src="./assets/Shapes.svg" alt="" />
+
+      {/* <Slider ref={slider} {...settings} className="helllo"> */}
       <div className="flex overflow-hidden">
         {episodes.map((episode) => (
           <div className="even:rotate-1 odd:rotate-[-1deg] mr-[28px]">
@@ -43,9 +67,14 @@ export default function Episodes() {
           </div>
         ))}
       </div>
-      <div className="flex justify-end pr-[82px]">
-        <img className="w-[100px] mt-[65px]" src="./assets/Arrows.svg" alt="" />
+      {/* </Slider> */}
+
+      <div className="flex justify-end pr-[82px] mt-[65px]">
+        {/* <button className="slider-button mr-4 flex items-center justify-center w-[40px] h-[40px] rounded-full bg-white text-[#3b82f6]" onClick={() => slider?.current?.slickPrev()}><ArrowBackIcon fontSize="small"/></button> */}
+        {/* <button className="slider-button flex items-center justify-center w-[40px] h-[40px] rounded-full bg-white text-[#3b82f6]" onClick={() => slider?.current?.slickNext()}><ArrowForwardIcon fontSize="small"/></button> */}
+        <img className="w-[100px]" src="./assets/Arrows.svg" alt="" />
       </div>
+
     </div>
   )
 }

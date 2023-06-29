@@ -1,5 +1,5 @@
 .featured-box{
-  background: linear-gradient(295deg, rgba(139, 92, 246, 0.00) 0%, #8B5CF6 41.40%, #8B5CF6 100%), url("./assets/Bg.png");
+  background: url("./assets/Bg.png"), url("./assets/Oval.png"), linear-gradient(295deg, rgba(139, 92, 246, 0.00) 0%, #8B5CF6 41.40%, #8B5CF6 100%);
   border-radius: 24px;
   width: 1270px;
   background-position: right 0 bottom 0;
