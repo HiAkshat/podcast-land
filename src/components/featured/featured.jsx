@@ -11,9 +11,9 @@ export default function Featured() {
 
         <div className="play-controls flex items-center justify-around">
           <div className="play-controls-icons flex w-[20%] justify-around items-center">
-            <img src="./assets/Play.svg" alt="" />
-            <img src="./assets/1.svg" alt="" />
-            <img src="./assets/2.svg" alt="" />
+            <img src="./assets/player-controls/Play.svg" alt="" />
+            <img src="./assets/player-controls/1.svg" alt="" />
+            <img src="./assets/player-controls/2.svg" alt="" />
             <div className="flex items-center py-[4px] px-[6px] bg-[rgb(255,255,255,0.32)] rounded-[4px]">
               <span className="speed">1x</span>
             </div>
