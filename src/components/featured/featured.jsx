@@ -18,7 +18,7 @@ export default function Featured() {
               <span className="speed">1x</span>
             </div>
           </div>
-          <div className="progress-bar w-[65%] h-[8px] bg-[rgb(255,255,255,0.49)] ">
+          <div className="progress-bar w-[65%] h-[8px] bg-[rgb(255,255,255,0.49)] cursor-pointer">
             <div className="w-[15%] h-[8px] bg-[#ffffff]"></div>
           </div>
           <div className="progress-time">

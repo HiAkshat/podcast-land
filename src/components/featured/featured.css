@@ -1,5 +1,5 @@
 .featured-box{
-  background: url("Oval.png"), linear-gradient(295deg, rgba(139, 92, 246, 0.00) 0%, #8B5CF6 27.40%, #8B5CF6 100%), url("Bg.png"), #8B5CF6;
+  background: url("featured_assets/Oval.png"), linear-gradient(295deg, rgba(139, 92, 246, 0.00) 0%, #8B5CF6 27.40%, #8B5CF6 100%), url("featured_assets/Bg.png"), #8B5CF6;
   border-radius: 24px;
   width: 1270px;
   background-position: right 0 bottom 0;
@@ -52,6 +52,10 @@
   background: linear-gradient(45deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.12) 100%);
   box-shadow: 0px 4px 6px -1px rgba(17, 24, 39, 0.04);
   padding: 20px 16px
+}
+
+.play-controls-icons *{
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 340px) and (max-width: 1400px){

@@ -12,6 +12,10 @@
   line-height: 22px;
 }
 
+.social-icons *{
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 900px){
   .bottom-bar{
     padding: 0 100px;
