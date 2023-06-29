@@ -1,0 +1,57 @@
+.notes-heading{
+  color: #1E293B;
+  font-size: 36px;
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 800;
+  line-height: 46px;
+  letter-spacing: -0.346px;
+}
+
+.detail-text{
+  color: #64748B;
+  font-size: 16px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.222px;
+}
+
+.heading-other{
+  color: #1E293B;
+  font-size: 24px;
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 800;
+  line-height: 34px;
+  letter-spacing: -0.35px;
+}
+
+.hosts-heading{
+  color: #1E293B;
+  font-size: 16px;
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+}
+
+.host-name{
+  color: #1E293B;
+  font-size: 14px;
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.host-handle{
+  color: #3B82F6;
+  font-size: 12px;
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}
