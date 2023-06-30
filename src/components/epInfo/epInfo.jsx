@@ -64,8 +64,8 @@ export default function EpInfo() {
       </div>
 
       <div className="hosts-and-guests relative flex flex-col bg-slate-50 w-[280px] h-full pl-[24px] py-[24px] rounded-[24px]">
-        <img className="absolute right-[58px] top-[-12px] w-[21px]" src="./assets/hosts/star1.svg" alt="" />
-        <img className="absolute right-[108px] top-[-33px] w-[21px]" src="./assets/hosts/star2.svg" alt="" />
+        <img className="absolute right-[58px] top-[-12px] w-[21px]" src="./assets/star1.svg" alt="" />
+        <img className="absolute right-[108px] top-[-33px] w-[21px]" src="./assets/star2.svg" alt="" />
         <span className="hosts-heading">Hosts & Guests</span>
         {hosts.map((host) => (
           <div className="flex mt-[16px]">

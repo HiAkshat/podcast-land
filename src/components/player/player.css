@@ -7,14 +7,21 @@
   line-height: 18px;
 }
 
+.speed-box{
+  width: 24px;
+  height: 20px;
+}
+
 .speed{
   color: #FFF;
-  font-size: 10px;
+  font-size: 9px;
   font-family: Inter;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: -0.104px;
+  /* letter-spacing: -0.104px; */
+  /* padding: 10px; */
+  padding: 4px 6px;
 }
 
 .play-controls{
@@ -29,7 +36,7 @@
 }
 
 .progress-time{
-  margin-left: 6px;
+  padding-left: 8px;
 }
 
 @media only screen and (max-width: 1024px){
@@ -51,6 +58,8 @@
 
   .progress-time{
     margin-top: 5px;
+    padding-left: 0px;
+
   }
 }
 

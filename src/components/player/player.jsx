@@ -6,6 +6,7 @@ export default function Player() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
   const [currentTime, setCurrentTime] = useState(274);
+  const [currentSpeed, setCurrentSpeed] = useState([1000, "1x"])
   const [duration, setDuration] = useState(2645);
 
   const progressBar = useRef();
@@ -16,7 +17,7 @@ export default function Player() {
     if (isPlaying && currentTime < duration) {
       intervalId = setInterval(() => {
         setCurrentTime((prevTime) => prevTime + 1); // Increment currentTime by 1 second
-      }, 1000);
+      }, currentSpeed[0]);
     } else {
       clearInterval(intervalId);
     }
@@ -24,7 +25,7 @@ export default function Player() {
     return () => {
       clearInterval(intervalId);
     };
-  }, [isPlaying, currentTime, duration]);
+  }, [isPlaying, currentTime, duration, currentSpeed]);
 
 
   function handlePlayPause() {
@@ -46,6 +47,17 @@ export default function Player() {
     }
     else{
       setCurrentTime(currentTime + 10);
+    }
+  }
+
+  function handleSpeedToggle() {
+    console.log(currentSpeed)
+    if (currentSpeed[0] === 1000) {
+      setCurrentSpeed([667, "1.5x"]);
+    } else if (currentSpeed[0] === 667) {
+      setCurrentSpeed([500, "2x"])
+    } else {
+      setCurrentSpeed([1000, "1x"]);
     }
   }
 
@@ -88,8 +100,8 @@ export default function Player() {
         <button onClick={handleBackward}><img src="./assets/player-controls/1.svg" alt="" /></button>
         <button onClick={handleForward}><img src="./assets/player-controls/2.svg" alt="" /></button>
         <button>
-          <div className="flex items-center py-[4px] px-[6px] bg-[rgb(255,255,255,0.32)] rounded-[4px]">
-            <span className="speed">1x</span>
+          <div onClick={handleSpeedToggle} className="speed-box flex items-center justify-center bg-[rgb(255,255,255,0.32)] rounded-[4px]">
+            <span className="speed">{currentSpeed[1]}</span>
           </div>
         </button>
       </div>
