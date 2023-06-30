@@ -111,9 +111,11 @@ export default function Player() {
       </div>
 
       <div className="progress-time">
-        <span>{formatTime(currentTime)}</span>
-        <span className="opacity-[0.32]"> | </span>
-        <span>{formatTime(duration)}</span>
+        <span>
+          {formatTime(currentTime)}
+          <span className="opacity-[0.32]"> | </span>
+          {formatTime(duration)}
+        </span>
       </div>
 
     </div>

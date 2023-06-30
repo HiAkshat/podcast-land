@@ -2,7 +2,7 @@ import "./navbar.css"
 
 export default function Navbar() {
   return (
-    <div className="">
+    <div>
       <div className="flex navbar justify-between ">
         <img className="cursor-pointer" src="./assets/Logo.svg" alt="" />
         <button className="sub-button flex rounded-[18px] bg-[#3B82F6] px-[12px] py-[5px]">

@@ -53,8 +53,6 @@ const episodes = [
   },  
 ]
 
-
-
 export default function Episodes() {
   const slider = useRef(null)
   
