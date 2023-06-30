@@ -28,40 +28,6 @@
   opacity: 0.800000011920929;
 }
 
-.progress-time{
-  color: #FFF;
-  font-size: 12px;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 18px;
-}
-
-.speed{
-  color: #FFF;
-  font-size: 10px;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: -0.104px;
-}
-
-.play-controls{
-  border-radius: 24px;
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.12) 100%);
-  box-shadow: 0px 4px 6px -1px rgba(17, 24, 39, 0.04);
-  padding: 20px 16px
-}
-
-.play-controls-icons{
-  width: 20%;
-}
-
-.play-controls-icons *{
-  cursor: pointer;
-}
-
 @media only screen and (min-width: 340px) and (max-width: 1400px){
   .featured-box{
     width: 80%;
@@ -74,33 +40,9 @@
 }
 
 
-@media only screen and (max-width: 1014px){
-  .play-controls{
-    padding: 20px 8px;
-  }
-  
-  .play-controls-icons *{
-    transform: scale(0.8);
-
-  }
-  
-}
-
 @media only screen and (max-width: 824px){
   .featured-box{
     margin-top: 60px;
-  }
-
-  .play-controls{
-    flex-direction: column;
-  }
-
-  .play-controls-icons *{
-    margin: 5px;
-  }
-
-  .progress-bar{
-    margin: 5px 0;
   }
   
   .featured-heading{
@@ -108,21 +50,13 @@
   }
 }
 
-@media only screen and (max-width: 660px){
-  .play-controls-icons{
-    width: 70%;
-  }
-
+@media only screen and (max-width: 660px){  
   .featured-box{
     padding: 50px;
   }
-
+  
   .featured-heading{
     font-size:28px;
     line-height: 36px;
-  }
-
-  .progress-bar{
-    margin: 10px 0;
   }
 }

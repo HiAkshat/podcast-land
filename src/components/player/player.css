@@ -1,0 +1,65 @@
+.progress-time{
+  color: #FFF;
+  font-size: 12px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.speed{
+  color: #FFF;
+  font-size: 10px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.104px;
+}
+
+.play-controls{
+  border-radius: 24px;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.12) 100%);
+  box-shadow: 0px 4px 6px -1px rgba(17, 24, 39, 0.04);
+  padding: 20px 16px
+}
+
+.play-controls-icons{
+  width: 20%;
+}
+
+.progress-time{
+  margin-left: 6px;
+}
+
+@media only screen and (max-width: 1024px){
+  .play-controls{
+    flex-direction: column;
+  }
+
+  .play-controls-icons{
+    width: 70%;
+  }
+
+  .play-controls-icons *{
+    margin: 5px;
+  }
+
+  .progress-bar{
+    margin: 5px 0;
+  }
+
+  .progress-time{
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 660px){
+  .play-controls-icons{
+    width: 80%;
+  }
+  
+  .progress-bar{
+    margin: 10px 0;
+  }
+}
